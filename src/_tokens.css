@@ -1,0 +1,63 @@
+:root {
+    --black-100: #333;
+    --black-200: #404040;
+    --black-300: #4d4d4d;
+    --black-400: #595959;
+    --black-500: #666;
+    --black-600: #737373;
+    --black-700: #8c8c8c;
+
+    --white-100: #a6a6a6;
+    --white-200: #b3b3b3;
+    --white-300: #ccc;
+    --white-400: #d9d9d9;
+    --white-500: #f2f2f2;
+    --transparent: transparent !important;
+    --focus: hsl(223, 100%, 57%);
+    --error: hsl(344, 94%, 60%);
+
+    --zero: 0;
+    --offset: 2px;
+    --prime: 3px;
+    --gap-1: calc(var(--prime) * 2);
+    --gap-2: 0.6em;
+    --gap-3: 0.8em;
+    --gap-4: 1em;
+    --gap-5: 1.2em;
+
+    --comfy-height-hero: clamp(250px, 50vmax, 500px);
+    --comfy-height-xs: auto;
+    --comfy-height: max(36px, 2em);
+    --comfy-height-lg: max(44px, 2.4em);
+
+    --ratio-square: 1;
+    --ratio-portrait: 9/16;
+    --ratio-landscape: 16/9;
+    --ratio-ultrawide: 18/5;
+
+    --border-color: var(--black-200);
+    --border-radius: 0.1em;
+    --border-radius-xl: 0.2em;
+
+    --z-1: 1;
+    --z-2: 2;
+    --z-3: 3;
+    --z-max: 999;
+
+    --shadow-unit: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.1),
+        0 16px 16px rgba(0, 0, 0, 0.05);
+    --shadow-group: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+        0 8px 16px rgba(0, 0, 0, 0.11);
+
+    --unit-disabled: 0.8;
+
+    --unit-gap: var(--gap-1) var(--gap-2);
+    --group-gap: var(--gap-2);
+}
+
+@media (--OSdark) {
+    /*  body {
+    background-color: var(--black-700);
+    color: var(--white-100);
+  }*/
+}

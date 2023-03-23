@@ -1,0 +1,72 @@
+.unit {
+    padding: var(--unit-gap);
+    border-width: var(--prime);
+    border-color: var(--border-color);
+    box-shadow: var(--shadow-1);
+}
+
+.group {
+    padding: var(--group-gap);
+    border-width: var(--prime);
+    border-color: var(--border-color);
+    box-shadow: var(--shadow-2);
+}
+
+:is(body *:focus) {
+    outline-style: solid;
+    outline-color: var(--focus);
+    outline-offset: var(--offset);
+    outline-width: var(--prime);
+}
+
+.light-unit {
+    background: linear-gradient(90deg, #e6e6e6 5%, #ccc 5%, #ccc 95%, #a6a6a6 95%);
+    &::focus-within {
+    }
+    &::selection {
+    }
+
+    &:is(:placeholder, ::-webkit-input-placeholder, ::-ms-input-placeholder) {
+    }
+    & polygon {
+    }
+}
+
+.dark-unit {
+    background: linear-gradient(90deg, #737373 5%, #595959 5%, #595959 95%, #404040 95%);
+    &::focus-within {
+    }
+    &::selection {
+    }
+
+    &:is(:placeholder, ::-webkit-input-placeholder, ::-ms-input-placeholder) {
+    }
+    & polygon {
+    }
+}
+
+.focus-unit {
+    background-color: var(--focus);
+    &::focus-within {
+    }
+    &::selection {
+    }
+
+    &:is(:placeholder, ::-webkit-input-placeholder, ::-ms-input-placeholder) {
+    }
+    & polygon {
+    }
+}
+
+.error-unit {
+    background-color: var(--error);
+    &::focus-within {
+    }
+    &::selection {
+    }
+
+    &:is(:placeholder, ::-webkit-input-placeholder, ::-ms-input-placeholder) {
+    }
+    & polygon {
+    }
+}
