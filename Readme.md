@@ -1,8 +1,8 @@
 ## CSS
 
-Units and themes with a dash of typescript. 
+**Units** and how to theme them. With a dash of typescript. 
 
-This repo can be extended with the concept of **groups**. More info on it's repo, check [demo](https://github.com/polmoneys/css-group).
+Code can be extended with the concept of **groups**. More info on it's repository, has [demo](https://github.com/polmoneys/css-group).
 
 ### Get started 
 
