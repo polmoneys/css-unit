@@ -1,0 +1,55 @@
+.saturate {
+    filter: saturate(0.2);
+}
+
+:where(html) {
+    --bright: 1.1;
+    --brighter: 1.3;
+    --brightest: 2.4;
+}
+
+.bright {
+    filter: brightness(var(--brighter));
+}
+
+.fix-logo {
+    mix-blend-mode: darken;
+    /* difference overlay */
+    filter: grayscale(100%) contrast(1%);
+    &:hover {
+        mix-blend-mode: normal;
+        filter: none;
+    }
+}
+
+.fix-white-bg {
+    mix-blend-mode: multiply;
+}
+
+.emoji-red-check {
+    filter: hue-rotate(-120deg);
+}
+
+.w-b {
+    color: var(--white);
+    mix-blend-mode: difference;
+}
+
+.b-w {
+    color: var(--white);
+    background-color: var(--black);
+    mix-blend-mode: multiply;
+}
+
+.cta-words {
+    isolation: isolate;
+}
+
+.cta-words > * {
+    color: var(--accent);
+}
+
+.cta-words > *:last-of-type {
+    mix-blend-mode: difference;
+    color: var(--accent-error);
+}

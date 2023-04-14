@@ -28,6 +28,10 @@ body {
 :is(h1, h2, h3) {
     word-wrap: break-word;
     line-height: var(--set-solid);
+    /* 
+        text-wrap: balance;
+        max-inline-size: 50ch;
+    */
 }
 
 h1:has(span, b),
