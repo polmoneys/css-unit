@@ -1,3 +1,10 @@
+.container {
+    --boundary: 1280px;
+    --boundary-spacing: 16px;
+    width: calc(min(100%, var(--boundary)) - var(--boundary-spacing) * 2);
+    margin-inline: auto;
+}
+
 .col,
 .row {
     display: flex;
@@ -243,4 +250,10 @@
 
 @media (prefers-reduced-data: no-preference) {
     /* user does not prefers to reduce data so go wild*/
+}
+
+@media (--canHas) {
+    .canHas {
+        color: red;
+    }
 }

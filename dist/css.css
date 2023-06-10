@@ -524,3 +524,8 @@ p:has(span, b) {
     border-radius: 50% !important;
     padding: 0 !important;
 }
+@media not (selector(: has(*))) {
+    .canHas {
+        color: red;
+    }
+}
